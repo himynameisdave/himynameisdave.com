@@ -1,38 +1,27 @@
-# create-svelte
+<div align="center" margin="0 auto 20px">
+  <h1>himynameisdave.com</h1>
+  <p style="font-style: italic;">
+    💻 This is a personal website for Dave Lunny.
+  </p>
+</div>
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+---
 
-## Creating a project
+This is a basic Sveltekit site, deployed to Netlify.
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Running
 
 ```bash
+pnpm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
+## Build for Production
 
 ```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+## Contributing
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Don't! Feel free to fork and modify this repo though, but I won't be accepting your PRs here.
