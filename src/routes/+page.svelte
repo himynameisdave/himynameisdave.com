@@ -1,3 +1,9 @@
+<script lang="ts">
+  import Music from '../components/Music.svelte';
+
+  export let data;
+</script>
+
 <style>
   main {
     background-color: #000;
@@ -15,6 +21,7 @@
 
     min-height: 30%;
     min-width: 0;
+    z-index: 0;
   }
 
   h1 {
@@ -30,6 +37,7 @@
     font-size: 2rem;
     text-align: center;
     max-width: 90vw;
+    z-index: 1;
   }
 
 
@@ -38,7 +46,12 @@
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
+    z-index: 1;
+  }
+
+  .media-farts {
+    z-index: 1;
   }
 
   a {
@@ -108,6 +121,10 @@
     <a href="mailto:d@velunny.com?subject=i've%20got%20a%20bone%20to%20pick%20with%20you" target="_blank" rel="noopener">
       email
     </a>
+  </div>
+
+  <div class="media-farts">
+    <Music {...data.lastfm} />
   </div>
 
   <img class="flameline" src="/flameline.gif" alt="Flameline" />
